@@ -1,6 +1,6 @@
 use t::TestLess;
 
-plan tests => 1 * chunks;
+plan tests => 1 * blocks;
 
 filters {
     spec => [qw(split parse)],

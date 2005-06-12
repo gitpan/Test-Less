@@ -1,10 +1,10 @@
 use t::TestLess;
 
-plan tests => 1 * chunks;
+plan tests => 1 * blocks;
 
 reset_test_env;
 # ok(not -e 't/Test-Less/index.txt');
-is(next_chunk->index, '');
+is(next_block->index, '');
 # ok(-e 't/Test-Less/index.txt');
 
 filters {

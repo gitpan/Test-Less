@@ -1,5 +1,5 @@
 package t::TestLess;
-use Test::Chunks -Base;
+use Test::Base -Base;
 use Test::Less;
 our @EXPORT = qw(
     test_less_new
@@ -31,7 +31,7 @@ sub check_index_content() {
 }
 
 package t::TestLess::Filter;
-use base 'Test::Chunks::Filter';
+use base 'Test::Base::Filter';
 
 sub backticks {
     my $command = shift;

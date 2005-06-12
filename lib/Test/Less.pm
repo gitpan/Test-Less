@@ -1,7 +1,7 @@
 package Test::Less;
 use Spiffy 0.24 -Base;
 use Spiffy ':XXX';
-our $VERSION = '0.10';
+our $VERSION = '0.11';
 our @EXPORT = qw(run);
 
 field silent => 0;

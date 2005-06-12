@@ -9,11 +9,11 @@ $t->tag(qw(foo bar t/tests/one.t));
 
 ok(-e 't/Test-Less/index.txt');
 
-check_index_content(next_chunk->expected);
+check_index_content(next_block->expected);
 
 $t->tag(qw(bar baz t/tests/two.t t/tests/three.t));
 
-check_index_content(next_chunk->expected);
+check_index_content(next_block->expected);
 
 __DATA__
 ===

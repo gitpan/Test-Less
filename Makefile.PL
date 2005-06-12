@@ -9,7 +9,7 @@ version_from('lib/Test/Less.pm');
 requires(qw(
     perl 5.6.1
     Test::Harness 2.46
-    Test::Chunks 0.36
+    Test::Base 0.40
     Spiffy 0.24
 ));
 

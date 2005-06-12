@@ -6,15 +6,15 @@ ok(not -e 't/Test-Less/index.txt');
 
 my $t = Test::Less->new;
 
-is(next_chunk->index, '');;
+is(next_block->index, '');;
 
 $t->untag(qw(foo bar t/tests/two.t));
 
-check_index_content(next_chunk->expected);
+check_index_content(next_block->expected);
 
 $t->untag(qw(bar t/tests/one.t t/tests/three.t));
 
-check_index_content(next_chunk->expected);
+check_index_content(next_block->expected);
 
 __DATA__
 ===
